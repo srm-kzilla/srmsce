@@ -1,0 +1,381 @@
+/* @font-face {
+    font-family: "Acumin";
+    src: url("./Fonts/Bebas-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./Fonts/HelveticaNeueLight.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("./Fonts/MaisonNeue-Black.otf");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+:root {
+    --primary-color: #CEAD3A;
+}
+
+.kz-nav{
+    background-color: transparent !important;
+}
+
+.kz-nav li a{
+    color: black !important;
+    font-weight: 999;
+}
+
+.kz-row{
+    height: 100vh;
+}
+
+.kz-row-about{
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.kz-sce{
+    max-width: 30vw;
+}
+
+.kz-h3{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 999;
+}
+
+.kz-relative{
+    position: relative;
+}
+
+.kz-absolute{
+    position: absolute;
+    top: 70%;
+    left: 90%;
+}
+
+.kz-ml{
+    height: 60px;
+    margin-left: 10px;
+    border-left-style: solid;
+    border-width: 2px;
+    border-color: var(--primary-color);
+}
+
+.kz-absolute p{
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: 999;
+    margin-bottom: 0px;
+}
+
+.kz-numbers {
+    margin-left: 0px;
+    color: black;
+    font-size: 600px;
+    -webkit-text-fill-color: #fafafa; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--primary-color);
+  }
+
+.kz-absolute-about{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+.kz-absolute-about h1{
+    color: var(--primary-color);
+    font-size: 95px;
+    font-weight: 999;
+}
+
+.kz-row-about p{
+    width: 80%;
+}
+
+.kz-gold{
+    background-color: var(--primary-color);
+}
+
+.kz-logo{
+    width: 100%;
+}
+
+.kz-foot{
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+    color: white;
+}
+
+.kz-foot a{
+    color: black;
+    position: relative;
+}
+
+.kz-foot a:hover{
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.kz-foot a::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    top: 30px;
+    left: 0px;
+    background-color: black;
+    width: 0px;
+    transition-duration: 0.7s;
+}
+
+.kz-foot a:hover::before{
+    position: absolute;
+    width: 100%;
+    transition-duration: 0.7s;
+}
+
+.kz-foot2{
+    font-size: 20px;
+    padding-left: 40px;
+    color: white;
+}
+
+.kz-foot2 a{
+    color: black;
+    position: relative;
+}
+
+.kz-foot2 a:hover{
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.kz-foot2 a::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    top: 30px;
+    left: 0px;
+    background-color: black;
+    width: 0px;
+    transition-duration: 0.7s;
+}
+
+.kz-foot2 a:hover::before{
+    position: absolute;
+    width: 100%;
+    transition-duration: 0.7s;
+}
+
+.kz-foot-visit{
+    padding-top: 20px;
+    padding-left: 40px; 
+    font-weight: 999;
+    color: white;
+}
+
+.kz-foot-exp{
+    padding-top: 20px;
+    padding-left: 0px; 
+    font-weight: 999;
+    color: white;
+}
+
+.kz-li{
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.kz-li:hover{
+    color: rgb(228, 222, 222);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.kz-social{
+    padding-left: 40px;
+}
+
+.kz-social ul{
+    list-style-type: none !important;
+}
+
+.kz-social li{
+    display: inline;
+}
+
+.filler{
+    width: 40px;
+    fill: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-right: 15px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.filler:hover{
+    fill: var(--primary-color);
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+
+@media(max-width: 1100px){
+    
+    .kz-foot a:hover::before{
+        width: 0px;
+    }
+    .kz-foot2 a:hover::before{
+        width: 0px;
+    }
+    .kz-h3{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 992px){
+    .kz-row-about{
+        height: auto;
+    }
+    .kz-row-about p{
+        width: auto;
+    }
+    .kz-foot{
+        font-size: 15px;
+        padding-left: 40px;
+        color: white;
+    }
+    .kz-foot2{
+        font-size: 15px;
+        padding-left: 40px;
+        color: white;
+    }
+    .kz-foot a::before{
+        top: 20px;
+    }
+    .kz-foot2 a::before{
+        top: 20px;
+    }
+    .kz-foot a:hover::before{
+        width: 100%;
+    }
+    .kz-foot2 a:hover::before{
+        width: 100%;
+    }
+    .kz-absolute{
+        display: none;
+    }
+}
+
+@media (max-width: 550px){
+    .kz-numbers{
+        font-size: 300px;
+    }
+
+    .kz-absolute-about h1{
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .kz-absolute-about{
+        top: 100px;
+        left: 110px;
+    }
+
+    .kz-h3{
+        font-size: 15px;
+    }
+
+    .kz-sce{
+        max-width: 100vw;
+        width: 300px;
+    }
+}
+
+@media(max-width:365px){
+    .kz-foot, .kz-foot2, .kz-foot-visit, .kz-social{
+        padding-left: 0px;
+    }
+}
+
+/* ------------------------- */
+
+/* .kz-nav{
+    background-color: transparent !important;
+}
+
+.kz-nav li a{
+    color: black !important;
+    font-weight: 999;
+    position: relative;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    background-position: 50% 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition-duration: 0.2s;
+}
+
+.kz-nav li a:hover{
+    background: linear-gradient(to right, white 42px, black 30%);
+    -webkit-background-clip: text;
+    background-position: 0px 0;
+    transition-duration: 0.2s;
+}
+
+.kz-active{
+    position: relative;
+    background: linear-gradient(to right, white 42px, black 30%);
+    -webkit-background-clip: text;
+    transition-duration: 0s !important;
+}
+
+.kz-active:hover{
+    background: linear-gradient(to right, black 50%, white 50%);
+    -webkit-background-clip: text;
+    background-position: 43px 0;
+    transition-duration: 0s !important;
+}
+
+.kz-active::before{
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 33px;
+    width: 42px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition-duration: 0.5s;
+}
+
+.kz-nav li a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 33px;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition-duration: 0.5s;
+}
+
+.kz-nav li a:hover::after{
+    width: 42px;
+    transition-duration: 0.5s;
+} */
