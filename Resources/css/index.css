@@ -332,7 +332,7 @@
 }
 
 .kz-nav li a:hover{
-    background: linear-gradient(to right, white 42px, black 30%);
+    background: linear-gradient(to right, white 45px, black 30%);
     background-clip: text;
     -webkit-background-clip: text;
     background-position: 0px 0;
@@ -341,14 +341,13 @@
 
 .kz-active{
     position: relative;
-    background: linear-gradient(to right, white 42px, black 30%);
+    background: linear-gradient(to right, white 45px, black 30%);
     background-clip: text;
     -webkit-background-clip: text;
     transition-duration: 0s !important;
 }
 
 .kz-active:hover{
-    background: linear-gradient(to right, black 50%, white 50%);
     background-clip: text;
     -webkit-background-clip: text;
     background-position: 43px 0;
@@ -360,7 +359,7 @@
     position: absolute;
     background-color: var(--primary-color);
     height: 33px;
-    width: 42px;
+    width: 45px;
     top: 0px;
     left: 0px;
     z-index: -1;
