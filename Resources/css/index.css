@@ -312,8 +312,8 @@
 
 /* ------------------------- */
 
-/* .kz-nav{
-    background-color: transparent !important;
+.kz-nav{
+    background-color: white !important;
 }
 
 .kz-nav li a{
@@ -326,12 +326,14 @@
     background-color: black;
     background-position: 50% 0;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
     transition-duration: 0.2s;
 }
 
 .kz-nav li a:hover{
     background: linear-gradient(to right, white 42px, black 30%);
+    background-clip: text;
     -webkit-background-clip: text;
     background-position: 0px 0;
     transition-duration: 0.2s;
@@ -340,12 +342,14 @@
 .kz-active{
     position: relative;
     background: linear-gradient(to right, white 42px, black 30%);
+    background-clip: text;
     -webkit-background-clip: text;
     transition-duration: 0s !important;
 }
 
 .kz-active:hover{
     background: linear-gradient(to right, black 50%, white 50%);
+    background-clip: text;
     -webkit-background-clip: text;
     background-position: 43px 0;
     transition-duration: 0s !important;
@@ -376,6 +380,6 @@
 }
 
 .kz-nav li a:hover::after{
-    width: 42px;
-    transition-duration: 0.5s;
-} */
+    width: 45px;
+    transition-duration: 0.5s; 
+}
