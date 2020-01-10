@@ -388,3 +388,18 @@
     width: 45px;
     transition-duration: 0.3s; 
 }
+
+/*******
+Gallery
+*******/
+
+.kz-gallery-col{
+    margin-bottom: 25px;
+}
+.kz-gallery-col img{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.kz-gallery-col img:hover{
+    box-shadow: 0 7px 16px rgba(206, 173, 54,0.3); 
+}
