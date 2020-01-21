@@ -37,7 +37,7 @@
 }
 
 .kz-row-about {
-  min-height: 100vh;
+  height: 100vh;
   background-color: #fafafa;
 }
 
@@ -234,7 +234,7 @@
 /* Achievements */
 
 .kz-row-achieve {
-  min-height: 100vh;
+  height: 100vh;
   background-color: white;
 }
 
