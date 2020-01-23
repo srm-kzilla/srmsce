@@ -1,0 +1,50 @@
+.kz-concrete-intro {
+    margin: 100px 0px;
+}
+
+.kz-concrete-intro > .row > div:first-child {
+    padding: 20px 0px;
+}
+
+.kz-concrete-intro > .row > div:nth-child(2) {
+    padding: 20px 0px;
+}
+
+.kz-concrete-intro > .row > div:nth-child(2) p{
+    padding: 10px 50px;
+}
+
+.kz-concrete-intro > .row > div:first-child img{
+    width: 400px;
+    height: auto;
+}
+
+
+.kz-concrete-event > .row > div > ul {
+    list-style: none;
+    padding: 20px 5px;
+}
+
+.kz-concrete-event > .row > div > ul> li {
+    height: 32px;
+}
+
+.kz-concrete-event > .row > div > ul > li > button {
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.kz-concrete-event{
+    margin-bottom: 100px;
+    height: 10rem;
+}
+
+.kz-concrete-event > .row > div > ul > li > button:hover {
+    border-bottom: 1px dashed #cead3a;
+}
+
+.modal-body img{
+    width: 100%;
+    height: auto;
+}
