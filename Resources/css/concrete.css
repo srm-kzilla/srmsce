@@ -49,6 +49,12 @@
     height: auto;
 }
 
+.modal-footer button{
+    outline: none !important;
+    border: none !important;
+    background-color: #cead3a !important;
+}
+
 @media (max-width: 576px) {
     .kz-concrete-event{
         height: 30rem;
