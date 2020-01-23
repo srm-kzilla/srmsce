@@ -1,5 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
 .kz-concrete-intro {
     margin: 100px 0px;
+    position: relative;
 }
 
 .kz-concrete-intro > .row > div:first-child {
@@ -38,10 +44,52 @@
 .kz-concrete-event{
     margin-bottom: 100px;
     height: 10rem;
+    position: relative;
 }
 
 .kz-concrete-event > .row > div > ul > li > button:hover {
     border-bottom: 1px dashed #cead3a;
+}
+
+.kz-concrete-slider {
+    display: block;
+    width: 100%;
+    margin: 100px auto 100px auto;
+}
+.kz-concrete-slider img{
+    width: 100%;
+    height: auto;
+}
+.kz-concrete-slider h2{
+    margin: 20px auto;
+    font-size: 48px;
+    font-weight: 700;
+}
+.kz-concrete-slider h2 span {
+    color: #cead3a;
+    font-weight: 700;
+}
+.kz-concrete-slider .carousel-control-prev-icon,
+.kz-concrete-slider .carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  outline: none;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.kz-concrete-slider .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: grey;
+}
+
+.kz-concrete-slider .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: grey;
 }
 
 .modal-body img{

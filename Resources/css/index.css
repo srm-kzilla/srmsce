@@ -24,18 +24,20 @@
 .hero-btn {
   position: relative;
   margin: 50px auto 0;
-  padding: 10px 10px;
+  padding: 10px 20px;
   color: #fff;
   text-align: center;
-  text-transform: uppercase;
   background-color: #cead3a;
   border: none;
+  height: 80px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 
 .hero-btn {
   background-repeat: no-repeat;
-  background-position: -120px -120px, 0 0;
+  background-position: -220px -220px, 0 0;
   
   background-image: -webkit-linear-gradient(
     top left,
@@ -181,6 +183,10 @@
   width: 100%;
 }
 
+#contactUs {
+  z-index: 99;
+}
+
 .kz-foot {
   font-size: 20px;
   padding-left: 40px;
@@ -305,6 +311,10 @@
 
 /* Achievements */
 
+#achievements{
+  position: relative;
+}
+
 .kz-row-achieve {
   height: 100vh;
   background-color: white;
@@ -330,7 +340,7 @@
   background-color: var(--primary-color);
 }
 
-.carousel {
+#achievements .carousel {
   position: absolute;
   width: 30%;
   bottom: 20%;
@@ -338,11 +348,11 @@
   transform: translateX(-40%);
 }
 
-.carousel-item img {
+#achievements .carousel-item img {
   width: 100%;
   height: auto;
 }
-.carousel-indicators li {
+#achievements .carousel-indicators li {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -352,20 +362,41 @@
   margin-left: 8px;
   margin-right: 8px;
 }
-.carousel-indicators .active {
+#achievements .carousel-indicators .active {
   background-color: #989898;
 }
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
+#achievements .carousel-control-next-icon,
+#achievements .carousel-control-prev-icon {
   height: 32px;
   width: 32px;
   background-image: url("../images/right-arrow.svg");
 }
-.carousel-control-prev-icon {
+#achievements .carousel-control-prev-icon {
   transform: rotate(180deg);
 }
 
+#achievements img{
+  margin-top: 20px;
+  width: 80%;
+}
+#achievements .row a{
+  margin-left: auto;
+  margin-right: auto;
+}
+#achievements .row button{
+  outline: none;
+  border: none;
+  background-color: #cead3a;
+  font-size: 24px;
+}
+
+#achievements p{
+  font-size: 24px;
+}
+
+
 .kz-numbers3 {
+  z-index: -1;
   margin-left: 0px;
   color: black;
   font-size: 600px;
