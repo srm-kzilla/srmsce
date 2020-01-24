@@ -315,6 +315,16 @@
   position: relative;
 }
 
+#achievements img{
+  display: block;
+}
+
+@media (max-width: 576px){
+  #achievements img{
+    display: none;
+  }
+}
+
 .kz-row-achieve {
   height: 100vh;
   background-color: white;
@@ -462,6 +472,7 @@
 }
 .kz-gallery-col img {
   width: 100%;
+  height: 240px;
   transition: all 0.3s ease;
 }
 .kz-gallery-col img:hover {

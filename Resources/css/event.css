@@ -6,6 +6,7 @@
   backdrop-filter: grayscale(1) opacity(0.8);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
   color: #fff;
   text-align: center;
@@ -53,6 +54,15 @@
       13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
       80% { opacity: 0}
       100% { opacity: 0}
+  }
+
+  @media(max-width: 576px){
+    #fly-in{
+        font-size: 3em;
+    }
+    #fly-in span {
+        font-size: .4em;
+    }
   }
 
 /* cards css starts here */
@@ -151,7 +161,22 @@ h1 {
 .card input[type='checkbox']:checked + .menu-content {
     transform: translateY(-60px);
 }
+
+@media(max-width: 576px) {
+    .card{
+        width: 99%;
+        margin: 10px auto;
+    }
+    .card .data .content button {
+        font-size: 0.6rem;
+    }
+}
+
+
+
+
 .example-1 .wrapper {
+    background-position: center;
     background: url(https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80) 20% 1% / cover no-repeat;
 }
 .example-1 .date {
@@ -181,7 +206,7 @@ h1 {
     background-color: #fff;
     box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
 }
-.example-1 .title a {
+.example-1 .title {
     color: #808080;
 }
 .example-1 .menu-button {
@@ -245,6 +270,15 @@ h1 {
     top: -10px;
 }
 
+@media(max-width: 576px) {
+    .example-1 .date .day {
+        font-size: 16px;
+    }
+    .example-1 .title {
+        font-size: 16px;
+    }
+}
+
 
 /* row1 */
 
@@ -264,75 +298,135 @@ h1 {
 /* row2 */
 
 #evnt21 {
-    background: url(../images/events/evnt1.jpg) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt21.jpg) 20% 1% / cover no-repeat;
 
 }
 #evnt22{
-    background: url(../images/events/evnt12.jpg) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt22.jpg) 20% 1% / cover no-repeat;
 
 }
 #evnt23{
-    background: url(../images/events/evnt13.png) 20% 1% / cover no-repeat;
+    background: url(../images/events/event12-2.jpg) 20% 1% / cover no-repeat;
 
 }
 
 /* row3 */
 
 #evnt31 {
-    background: url(../images/events/evnt1.jpg) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt31.jpg) 20% 1% / cover no-repeat;
 
 }
 #evnt32{
-    background: url(../images/events/evnt12.jpg) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt21-2.jpg) 20% 1% / cover no-repeat;
 
 }
 #evnt33{
-    background: url(../images/events/evnt13.png) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt33.jpg) 20% 1% / cover no-repeat;
 
 }
 
 /* row4 */
 
 #evnt41 {
-    background: url(../images/events/evnt1.jpg) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt43-2.jpg) 20% 1% / cover no-repeat;
 
 }
 #evnt42{
-    background: url(../images/events/evnt12.jpg) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt41.jpg) 20% 1% / cover no-repeat;
 
 }
 #evnt43{
-    background: url(../images/events/evnt13.png) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt43.png) 20% 1% / cover no-repeat;
 
 }
 
 /* row5 */
 
 #evnt51 {
-    background: url(../images/events/evnt1.jpg) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt51.jpg) 20% 1% / cover no-repeat;
 
 }
 #evnt52{
-    background: url(../images/events/evnt12.jpg) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt52-2.jpg) 20% 1% / cover no-repeat;
 
 }
 #evnt53{
-    background: url(../images/events/evnt13.png) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt53.jpg) 20% 1% / cover no-repeat;
 
 }
 
 /* row6 */
 
 #evnt61 {
-    background: url(../images/events/evnt1.jpg) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt61.jpg) 20% 1% / cover no-repeat;
 
 }
 #evnt62{
-    background: url(../images/events/evnt12.jpg) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt62.jpg) 20% 1% / cover no-repeat;
 
 }
 #evnt63{
-    background: url(../images/events/evnt13.png) 20% 1% / cover no-repeat;
+    background: url(../images/events/evnt51-2.jpg) 20% 1% / cover no-repeat;
+
+}
+
+/* row7 */
+
+#evnt71 {
+    background: url(../images/events/evnt71.jpg) 20% 1% / cover no-repeat;
+
+}
+#evnt72{
+    background: url(../images/events/evnt72.jpg) 20% 1% / cover no-repeat;
+
+}
+#evnt73{
+    background: url(../images/events/evnt73-1.jpg) 20% 1% / cover no-repeat;
+
+}
+
+/* row8 */
+
+#evnt81 {
+    background: url(../images/events/evnt71.jpg) 20% 1% / cover no-repeat;
+
+}
+#evnt82{
+    background: url(../images/events/evnt62.jpg) 20% 1% / cover no-repeat;
+
+}
+#evnt83{
+    background: url(../images/events/evnt51-2.jpg) 20% 1% / cover no-repeat;
+
+}
+
+/* row9 */
+
+#evnt91 {
+    background: url(../images/events/evnt71.jpg) 20% 1% / cover no-repeat;
+
+}
+#evnt92{
+    background: url(../images/events/evnt62.jpg) 20% 1% / cover no-repeat;
+
+}
+#evnt93{
+    background: url(../images/events/evnt51-2.jpg) 20% 1% / cover no-repeat;
+
+}
+
+/* row10 */
+
+#evnt101 {
+    background: url(../images/events/evnt71.jpg) 20% 1% / cover no-repeat;
+
+}
+#evnt102{
+    background: url(../images/events/evnt62.jpg) 20% 1% / cover no-repeat;
+
+}
+#evnt103{
+    background: url(../images/events/evnt51-2.jpg) 20% 1% / cover no-repeat;
 
 }
 
