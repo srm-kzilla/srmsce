@@ -56,6 +56,10 @@
     width: 100%;
     margin: 100px auto 100px auto;
 }
+.kz-concrete-slider .carousel-inner {
+    width: 100%;
+    height: auto;
+}
 .kz-concrete-slider img{
     width: 100%;
     height: auto;
